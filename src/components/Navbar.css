@@ -1,0 +1,35 @@
+.navbar {
+  padding: 20px;
+  background-color: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-links span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+.tech {
+  padding: 100px 20px;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.tech-title {
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.tech-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tech-item {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  background-color: #334155;
+}
+
+@media (max-width: 900px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
