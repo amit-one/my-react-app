@@ -1,7 +1,30 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+﻿:root {
+  --page-bg: #0b0e16;
+  --page-fg: #ebf0ff;
 }
+
+:root[data-theme="light"] {
+  --page-bg: #f4f7ff;
+  --page-fg: #0f1730;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 8% -5%, rgba(99, 182, 255, 0.22), transparent 32%), var(--page-bg);
+  color: var(--page-fg);
+  transition: background-color 240ms ease, color 240ms ease;
+}
+
+#root {
+  min-height: 100vh;
 }

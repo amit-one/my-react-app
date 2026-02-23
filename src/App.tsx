@@ -1,15 +1,3 @@
-// import MainLayout from "./layout/MainLayout"
-
-// function App() {
-//   return <MainLayout />
-// }
-
-// export default App
-
-
-// ---------------------------------------------
-// Perfect 🔥 since we installed react-router-dom, now we convert app into a multi-page architecture.
-
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import ProjectsPage from "./pages/ProjectsPage"
